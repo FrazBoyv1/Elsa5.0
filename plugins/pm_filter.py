@@ -75,7 +75,7 @@ async def next_page(bot, query):
         cap_lines = []
         for file in files:
             file_link = f"https://t.me/{temp.U_NAME}?start=file_{file.file_id}"
-            cap_lines.append(f"📁 {get_size(file.file_size)} - [{file.file_name}]({file_link})")
+            cap_lines.append(f"@CGM_Files {get_size(file.file_size)} - [{file.file_name}]({file_link})")
         cap_text = "\n".join(cap_lines)
         btn = []
     else:
@@ -450,10 +450,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
         ],[
-             InlineKeyboardButton(f'ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇs​', url='https://t.me/new_ott_movies3'),
-             InlineKeyboardButton(f'ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/mn_movies2')
+             InlineKeyboardButton(f'ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇs​', url='https://t.me/CGM_Files'),
+             InlineKeyboardButton(f'ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Cyber_Fcracker')
          ],[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -473,7 +473,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start')
         ],[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -484,7 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -495,7 +495,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -506,7 +506,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot'),
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker'),
             InlineKeyboardButton('ʙᴜᴛᴛᴏɴ', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -518,7 +518,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "button":
         buttons = [[
            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -529,7 +529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "autofilter":
         buttons = [[
            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -540,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "coct":
         buttons = [[
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -552,7 +552,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -563,7 +563,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -575,7 +575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -595,7 +595,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
