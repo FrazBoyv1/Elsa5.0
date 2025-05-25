@@ -23,9 +23,9 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
               [
-                  InlineKeyboardButton(f'ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇs​', url='https://t.me/new_ott_movies3'),
-                  InlineKeyboardButton(f'ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/mn_movies2'),
-                  InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+                  InlineKeyboardButton(f'ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇs​', url='https://t.me/CGM_Files'),
+                  InlineKeyboardButton(f'ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Cyber_Fcracker'),
+                  InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/Cyber_Fcracker')
          ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -41,11 +41,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚙️ 𝑳𝒂𝒕𝒆𝒔𝒕 𝒎𝒐𝒗𝒊𝒆𝒔 𝒓𝒆𝒍𝒆𝒂𝒔𝒆 ⚙️', url='https://t.me/+dDtZwAhMiJQzZGY0')
+            InlineKeyboardButton('⚙️ 𝑳𝒂𝒕𝒆𝒔𝒕 𝒎𝒐𝒗𝒊𝒆𝒔 𝒓𝒆𝒍𝒆𝒂𝒔𝒆 ⚙️', url='https://t.me/CGM_Files')
             ],[
-            InlineKeyboardButton('⚓️ 𝑶𝑻𝑻  𝑰𝑵𝑺𝑻𝑨𝑮𝑹𝑨𝑴 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 ⚓️ ', url='https://t.me/+P_ni_6Ji_DAyMzQ1')
+            InlineKeyboardButton('⚓️ MOVIE REQUESTING GROUP ⚓️ ', url='https://t.me/movie_requesting_ww')
             ],[
-            InlineKeyboardButton('🖥 𝑶𝑻𝑻 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🖥', url='https://t.me/+P_ni_6Ji_DAyMzQ1')
+            InlineKeyboardButton('🖥 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🖥', url='https://t.me/Cyber_Fcracker')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
