@@ -45,7 +45,7 @@ async def keep_alive():
                 logging.info("Sent keep-alive request.")
             except Exception as e:
                 logging.error(f"Keep-alive request failed: {e}")
-            await asyncio.sleep(111)
+            await asyncio.sleep(45)
 
 class Bot(Client):
 
